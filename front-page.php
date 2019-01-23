@@ -15,7 +15,7 @@
         </div>
     </div>
 
-
+<!--Bandeau midle-->
     <div class="bandeau-midle">
         <?php while (have_rows('titre_bandeau')) : the_row(); ?>
 
@@ -26,6 +26,8 @@
             </div>
         <?php endwhile; ?>
     </div>
+
+<!--Bloc nos propriétés-->
     <div class="container-1">
         <div class="bloc-title-proprietes">
             <h1 class="title-proprietes"><span class="nos">Nos </span><span class="propr">Propriétés</span></h1>
@@ -84,6 +86,8 @@
                 <?php endwhile; ?>
             
             <?php endif; ?>
+    
+            <?php wp_reset_postdata() ?>
 
         </div>
         <div class="bloc-all-see">
@@ -94,31 +98,43 @@
         </div>
     </div>
 
-<div class="bloc-nos-agents">
-    <div class="bloc-picture">
-        <?php if( get_field('image') ): ?>
 
-            <img src="<?php the_field('image'); ?>" />
-    
-        <?php endif; ?>
-    </div>
-    <div class="bloc-text">
-        <div class="titre">
-            <h1>Nos Agents</h1>
+
+    <div class="bloc-agent">
+        <div class="bloc-agent-image">
+            <?php $teamImage = get_field('picture_agent_home') ;?>
+            <img src="<?php echo $teamImage['url'] ;?>" alt="agent">
         </div>
-        <div class="trait"></div>
-        <div class="nom">
-            <?php get_field('nom_agents') ?>
-            <?php the_field('nom_agents') ?>
-        
+        <div class="bloc-agent-text">
+            <div class="bloc-text-title">
+               Nos <strong>Agents</strong>
+            </div>
+            <div class="text-trait"></div>
+                <?php get_field('nom_agent_home') ;?>
+                <h2>
+                    <?php the_field('nom_agent_home');?>
+                </h2>
+            
+            <div class="description">
+                <?php get_field('description_agent_home') ;?>
+                <?php the_field('description_agent_home');?>
+            </div>
         </div>
-        <div class="desc"></div>
     </div>
-</div>
 
-
-
-
+    <div class="partenaires">
+            <div class="partenaires-titre">
+                <span>Our <strong>parteners</strong></span>
+            </div>
+        <div class="partenaire-content">
+            <?php  while ( have_rows('partenaires') ) : the_row();?>
+                <?php $sponsor = get_sub_field('sponsors') ;?>
+            <div class="content-image">
+                <img src="<?php echo $sponsor['url'];?>" alt="<?php echo $sponsor['alt'] ;?>">
+            </div>
+        <?php  endwhile;?>
+        </div>
+    </div>
 
 
 

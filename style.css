@@ -7,8 +7,9 @@
 
 */
 
-body {
-    font-family:  'Raleway', sans-serif;
+* {
+    font-family:  'Raleway', serif;
+
 }
 
 *, a, ul {
@@ -16,6 +17,11 @@ body {
     list-style-type: none;
     text-decoration: none;
 }
+
+
+
+
+/*****************************************/
 
 /*Agencement du header*/
 .header {
@@ -168,73 +174,13 @@ img {
 }
 
 .presentation-texte {
+    font-family: 'Playfair Display', serif;
      width: 70%;
      text-align: left;
      padding: 22px 30px;
      line-height: 1.5em;
-     font-size: 20px;
+     font-size: 16px;
 
-}
-
-/*Le footer*/
-
-footer {
-    background-color: #303030;
-    color: white;
-}
-
-.footer-rh img {
-    height: 40px;
-    width: 120px;
-}
-
-.footer-social nav {
-
-    width: 120px;
-}
-
-.footer-social nav ul {
-    padding-left: 0;
-    display: flex;
-    justify-content: space-between;
-    color: white;
-    width: 190px;
-}
-
-.footer-social nav ul li {
-    background-color: white;
-    width: 30px;
-    height: 30px;
-    border-radius: 15px;
-    text-align: center;
-    font-size: 20px;
-    color: white;
-    padding: 0 2px;
-}
-.footer-social nav ul li a{
-
-    color: black;
-}
-
-.footer-menu {
-    display: flex;
-    padding-left: 40px;
-}
-
-.footer-nav nav ul li a {
-    color: white;
-}
-.footer-nav h3 {
-    text-align: center;
-}
-.footer-right {
-    width: 210px;
-}
-
-.footer-right a {
-    color: red;
-    font-size: 18px;
-    text-decoration: underline;
 }
 
 /*disign logo realhome*/
@@ -367,7 +313,8 @@ footer {
     display: flex;
     justify-content: space-between;
     padding: 0 100px;
-    background-color: whitesmoke;
+    background-color: #F3F3F3   ;
+    margin: 50px 0;
 }
 
 .cadre {
@@ -392,14 +339,72 @@ footer {
 
 .cadre p {
     text-align: center;
+    font-family: 'Playfair Display', serif;
 
 }
+
+
+
+/* Bloc nos agents*/
+
+.bloc-agent {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 100px;
+}
+.bloc-agent-image img {
+    width: 446px;
+    height: 481px;
+}
+.bloc-agent-text {
+    padding: 50px 20px;
+
+}
+.bloc-text-title {
+    font-size: 36px;
+    padding: 50px 0 20px 0;
+}
+.text-trait {
+    margin-bottom: 40px;
+    padding-bottom: 14px;
+    border-bottom: 3px solid red;
+    width: 100px;
+    height: 20px;
+}
+
+/* Bloc nos partenaires*/
+.partenaires {
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 50px 22px;
+
+}
+.partenaires-titre {
+    font-size: 22px;
+    padding-top: 8px;
+}
+
+.partenaire-content {
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: space-between;
+    width: 971px;
+}
+
+.partenaire-content img {
+    width: 150px;
+    height: 49px;
+}
+
+/******************page propriétés******************/
+
+/*/Bloc propriétés*/
 
 .container-1 {
-    background-color: whitesmoke;
+    background-color: #F6F6F6;
 }
-
-/*/titre propriétés*/
 
 .bloc-title-proprietes {
     display: flex;
@@ -472,9 +477,121 @@ footer {
     font-weight: bold;
     font-size: 16px;
 }
-/*Page A propos*/
+/****************** Page A propos ****************/
+.title-apropos {
+    padding-left: 80px;
+}
+
+.cadre-apropos {
+    display: flex;
+    flex-flow: wrap;
+    padding: 0 80px;
+}
+
+.apropos-description {
+    max-width: 50%;
+    padding: 0 10px;
+    margin: 0 30px;
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+}
+
+.apropos-description p{
+    margin-top: 0;
+}
+
+
 
 .cadre-apropos img {
     width: 500px;
     height: 400px;
+}
+
+
+/*Bloc les agents*/
+
+.realhome-team {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+    margin: 50px 0;
+}
+
+.card-agent {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 20%;
+    border: 3px solid #f7f7f7;
+}
+
+.card-agent img {
+    width: 100%;
+    height: 300px;
+}
+.titre-equipe {
+    padding-left: 75px;
+    font-size: 28px;
+}
+
+
+/*Le footer*/
+
+footer {
+    background-color: #303030;
+    color: white;
+}
+
+.footer-rh img {
+    height: 40px;
+    width: 120px;
+}
+
+.footer-social nav {
+
+    width: 120px;
+}
+
+.footer-social nav ul {
+    padding-left: 0;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    width: 190px;
+}
+
+.footer-social nav ul li {
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    padding: 2px 2px;
+}
+.footer-social nav ul li a{
+
+    color: black;
+}
+
+.footer-menu {
+    display: flex;
+    padding-left: 40px;
+}
+
+.footer-nav nav ul li a {
+    color: white;
+}
+.footer-nav h3 {
+    text-align: center;
+}
+.footer-right {
+    width: 210px;
+}
+
+.footer-right a {
+    color: red;
+    font-size: 18px;
+    text-decoration: underline;
 }
