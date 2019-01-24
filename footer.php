@@ -6,9 +6,8 @@
                 <div class="realhome-logo">
                     <div class="square-top-left"></div>
                     <div class="square-top-right"></div>
-                    <div class="realhome"><a href="http://php/www.realhome.com/"></a>
-                        <span class="real">REAL</span>
-                        <span class="homes">HOME</span>
+                    <div class="realhome"><a href="http://php/www.realhome.com/">
+                        <span class="real">REAL<strong>HOME</strong></span></a>
                     </div>
                     <div class="square-bottom-left"></div>
                     <div class="square-bottom-right"></div>

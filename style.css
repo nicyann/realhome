@@ -217,6 +217,7 @@ img {
 
 .real {
     font-weight: lighter;
+    color: white;
 }
 
 .homes {
@@ -460,6 +461,16 @@ img {
     background-color: whitesmoke;
     margin: 10px 0;
 }
+.lien-title {
+    color:black;
+}
+
+.price-proprietes {
+
+    color: #E2574C;
+    font-weight: bold;
+
+}
 .card img {
     width: 100%;
     height: 330px;
@@ -594,4 +605,93 @@ footer {
     color: red;
     font-size: 18px;
     text-decoration: underline;
+}
+
+/*************** Page Article ****************/
+.container {
+
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+
+.titre-actualites {
+    text-align: center;
+}
+
+.main-article {
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: space-between;
+}
+
+.card-article {
+    padding: 2px 22px;
+    width: 66%;
+
+}
+
+.article-preview {
+    border-bottom:2px solid #e9e4f5;
+    padding: 22px;
+}
+.button-suite {
+    padding: 6px 0 6px ;
+    font: Bold 13px Arial;
+    background: #d34836;
+    color: #fff;
+    width: 90px;
+    border-radius: 4px;
+    border: none;
+    text-align: center;
+}
+.button-suite a {
+    color: white;
+}
+
+.article-sidebar {
+
+    width: 33%;
+}
+.article-sidebar h2 {
+    font-size: 18px;
+}
+
+.cat-item a {
+
+    color: black;
+
+}
+
+.article-sidebar li {
+    padding: 7px 0 ;
+}
+
+.article-sidebar ul {
+    padding: 0;
+}
+/************  Page single Article  *******/
+
+.single-container {
+
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: space-between;
+}
+
+.single-article {
+    width: 1200px;
+}
+
+
+/******** Contact ***********/
+
+#map{ /* la carte DOIT avoir une hauteur sinon elle n'apparaît pas */
+    height:400px;
+}
+
+.main-contact {
+    width: 90%;
+    margin: 0 auto;
 }

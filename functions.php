@@ -24,7 +24,7 @@ add_action("wp_footer", "mfp_Add_Text");
 // Déﬁnr ‘mfp_Add_Text'
 function mfp_Add_Text()
 {
-    
+
 
 }
 // on ajoute les menus dans le back
@@ -53,7 +53,7 @@ function create_post_type() {
     register_post_type('Propriétés',
         array(
             'label'                 => __('Propriétés'),
-            'singular_label'        => __('Propriétés'),
+            'singular_label'        => __('Propriété'),
             'add_new_item'          => __( 'Ajouter une propriétés' ),
             'edit_item'             => __( 'Modifier une propriétés' ),
             'new_item'              => __( 'Nouvelle propriétés' ),
@@ -79,13 +79,13 @@ add_action( 'init', 'create_post_type' );
 
 function themes_taxonomy() {
     register_taxonomy(
-        'genre',
-        'proprietes',
+        'ville',
+        'Propriétés',
         array(
-            'label' => 'Genre',
+            'label' => 'ville',
             'query_var' => true,
             'rewrite' => array(
-                'slug' => 'genre',
+                'slug' => 'ville',
                 'with_front' => true
             ),
             'hierarchical' => true,

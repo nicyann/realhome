@@ -67,7 +67,7 @@
                         <p><?php the_field('ville') ?></p>
                         
                         <?php get_field('prix') ?>
-                        <p><?php the_field('prix') ?></p>
+                        <p class="price-proprietes"><?php the_field('prix') ?></p>
                         <div class="details-proprietes">
                             <?php get_field('superficie')
                             ?><?php get_field('nb_chambres')
