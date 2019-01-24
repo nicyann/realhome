@@ -9,6 +9,8 @@
 
 * {
     font-family:  'Raleway', serif;
+    line-height: 1.8em;
+
 
 }
 
@@ -160,9 +162,9 @@ img {
 }
 
 .presentation-titre {
-    padding-top: 8px;
     font-size: 36px;
     text-align: right;
+    margin: 20px 0;
 
 }
 
@@ -687,11 +689,88 @@ footer {
 
 /******** Contact ***********/
 
+.titre-contact {
+    font-size: 48px;
+    padding-left: 100px;
+}
+
 #map{ /* la carte DOIT avoir une hauteur sinon elle n'apparaît pas */
-    height:400px;
+    height:450px;
 }
 
 .main-contact {
     width: 90%;
     margin: 0 auto;
+    padding: 0 30px;
+}
+
+.contact-bas {
+    display :flex;
+    flex-flow: nowrap;
+    justify-content : space-evenly;
+}
+
+.contact-bas h2 {
+    font-size: 36px;
+}
+.contact-bas-infos {
+    width: 30%;
+}
+.contact-bas-form {
+    width: 61%;
+}
+.wpcf7-text {
+    width: 400px;
+    height: 55px;
+    border: 2px solid #e6dacc;
+}
+.contact-form {
+    display: flex;
+    justify-content: space-between;
+}
+.contact-form + p {
+
+
+    margin-top: 0;
+}
+
+textarea {
+    width: 100%;
+    border: 2px solid #e6dacc;
+
+}
+.wpcf7-submit {
+    background-color: #e2574c;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px 15px;
+    position: relative;
+    text-decoration: none;
+    transition: background-color 0.5s ease-out;
+    width: 150px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.contact-bas-form h2 {
+    font-size: 36px;
+}
+
+.contact-ville {
+    margin-top: 0;
+font-weight: bold
+}
+.contact-adress {
+    margin-bottom: 0;
+    font-weight: bold
+}
+.contact-fax {
+    margin: 0;
+}
+.contact-tel {
+    margin: 0;
+}
+
+.contact-mail {
+    color: red;
 }
